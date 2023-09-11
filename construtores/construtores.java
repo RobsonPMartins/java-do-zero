@@ -7,26 +7,27 @@ public class construtores {
     // configurar os atributos do objeto durante a criação
 
     public static void main(String[] args) {
-        Pessoa pessoa1 = new Pessoa("Robson", "Professor", 33);
-        pessoa1.mostrarDetalhes();
+    
+        // Criando um objeto Carro usando o construtor
+        Carro carro1 = new Carro("Porsche", "911 GT3 RS", 2023);
+        Carro carro2 = new Carro("Ferrari", "Viper", 2023);
+      
+        // Usando metodos da classe Carro
+        carro1.exibirMensagens();
+        carro1.acelerarCarro1();
+        carro1.freiandoCarro1();
+        // Chamando o metodo de troca de carro
+        carro1.troqueiDeVeiculo();
+        carro1.pularLinhas();
+        // Pegando o carro2
+        carro2.exibirMensagens();
+        carro2.acelerarCarro2();
+        carro2.freiandoCarro2();
+        carro2.pularLinhas();
+        carro2.gosto();
+        carro2.conclusao();
+        carro2.pularLinhas();
     }
 
 }
 
-class Pessoa {
-    String nome;
-    String profissao;
-    int idade;
-
-    public Pessoa(String nome, String profissao, int idade) {
-        this.nome = nome;
-        this.profissao = profissao;
-        this.idade = idade;
-    }
-
-    public void mostrarDetalhes() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Profissao: " + profissao);
-    }
-}
